@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    color: #e4e4e7;
+    background: #1a1a1a;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+
+header {
+    border-bottom: 1px solid #333333;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+}
+
+.post-nav {
+    margin-bottom: 40px;
+}
+
+.post-nav a {
+    color: #a78bfa;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.post-nav a:hover {
+    color: #c4b5fd;
+}
+
+header h1 a {
+    color: #f4f4f5;
+    text-decoration: none;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    transition: color 0.2s;
+}
+
+header h1 a:hover {
+    color: #a78bfa;
+}
+
+header p {
+    color: #a1a1aa;
+    margin-top: 12px;
+    font-size: 1.05rem;
+}
+
+main {
+    min-height: 70vh;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.post-preview {
+    padding: 24px;
+    background: #242424;
+    border-radius: 12px;
+    border: 1px solid #333333;
+    transition: all 0.3s ease;
+}
+
+.post-preview:hover {
+    border-color: #a78bfa;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(167, 139, 250, 0.1);
+}
+
+.post-preview h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.post-preview h3 a {
+    color: #f4f4f5;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.post-preview h3 a:hover {
+    color: #a78bfa;
+}
+
+.post-preview time {
+    color: #71717a;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.post-preview p {
+    margin-top: 12px;
+    color: #a1a1aa;
+    line-height: 1.6;
+}
+
+.post-header {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #333333;
+}
+
+.post-header h2 {
+    font-size: 2.75rem;
+    margin-bottom: 16px;
+    color: #f4f4f5;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+}
+
+.post-header time {
+    color: #71717a;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.post-content {
+    line-height: 1.8;
+    font-size: 1.15rem;
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+    margin: 40px 0 20px;
+    color: #f4f4f5;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+}
+
+.post-content h2 {
+    font-size: 2rem;
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+}
+
+.post-content p {
+    margin-bottom: 24px;
+    color: #d4d4d8;
+}
+
+.post-content ul,
+.post-content ol {
+    margin: 20px 0;
+    padding-left: 24px;
+    color: #d4d4d8;
+}
+
+.post-content li {
+    margin-bottom: 8px;
+}
+
+.post-content a {
+    color: #a78bfa;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.post-content a:hover {
+    border-bottom-color: #a78bfa;
+}
+
+.post-content code {
+    background: #2a2a2a;
+    color: #c084fc;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco", monospace;
+    font-size: 0.9em;
+    border: 1px solid #3a3a3a;
+}
+
+.post-content pre {
+    background: #242424;
+    padding: 24px;
+    border-radius: 12px;
+    overflow-x: auto;
+    margin: 32px 0;
+    border: 1px solid #3a3a3a;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+    color: #f8f8f2;
+    border: none;
+    font-size: 0.95rem;
+}
+
+.post-footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #27272a;
+}
+
+.post-footer a {
+    color: #a78bfa;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.post-footer a:hover {
+    color: #c4b5fd;
+}
+
+footer {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid #333333;
+    text-align: center;
+    color: #71717a;
+    font-size: 0.9rem;
+}
+
+.chroma {
+    background: #242424 !important;
+}
+
+.chroma .ln {
+    color: #52525b;
+    margin-right: 1.5em;
+    user-select: none;
+}
+
+.chroma .lntd {
+    padding: 0;
+    margin: 0;
+    border: none;
+    vertical-align: top;
+}
+
+.chroma .lntable {
+    border-spacing: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 16px;
+    }
+
+    header h1 a {
+        font-size: 1.75rem;
+    }
+
+    .post-header h2 {
+        font-size: 2rem;
+    }
+
+    .post-preview {
+        padding: 20px;
+    }
+}

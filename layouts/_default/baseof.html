@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    {{ if .IsHome }}
+    <header>
+        <nav>
+            <h1><a href="/">{{ .Site.Title }}</a></h1>
+            <p>{{ .Site.Params.description }}</p>
+        </nav>
+    </header>
+    {{ else }}
+    <nav class="post-nav">
+        <a href="/">← Back to home</a>
+    </nav>
+    {{ end }}
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <p>&copy; {{ now.Year }} {{ .Site.Params.author }}</p>
+    </footer>
+</body>
+</html>

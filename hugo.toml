@@ -1,0 +1,17 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My Programming Blog'
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    style = 'monokai'
+    tabWidth = 4
+
+[params]
+  description = 'Personal blog about programming and coding'
+  author = 'Vinicius Bregoli'
