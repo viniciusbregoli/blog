@@ -13,5 +13,5 @@ style = 'monokai'
 tabWidth = 4
 
 [params]
-description = 'Personal blog. Testing webhook'
+description = 'Personal blog. Testing webhook, again.'
 author = 'Vinicius Bregoli'
