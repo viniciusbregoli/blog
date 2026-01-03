@@ -1,6 +1,5 @@
-baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My Programming Blog'
+title = 'My personal blog for programming'
 
 [markup]
 [markup.highlight]
@@ -13,5 +12,7 @@ style = 'monokai'
 tabWidth = 4
 
 [params]
-description = 'Personal blog. Testing webhook, again.'
+description = 'Personal blog to end brainrot and AI dependency.'
 author = 'Vinicius Bregoli'
+github = 'https://github.com/viniciusbregoli'
+linkedin = 'https://linkedin.com/in/viniciusbregoli'

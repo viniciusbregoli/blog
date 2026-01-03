@@ -8,5 +8,12 @@
     <div class="post-content">
         {{ .Content }}
     </div>
+
+    <footer class="post-footer">
+        <p>
+            <a href="{{ .Site.Params.github }}" target="_blank">GitHub</a> |
+            <a href="{{ .Site.Params.linkedin }}" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
 </article>
 {{ end }}

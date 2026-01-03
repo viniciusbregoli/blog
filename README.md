@@ -1,6 +1,6 @@
 # My Programming Blog
 
-A modern, dark-themed personal blog built with Hugo.
+An implementation of hugo blog to end my brainrot.
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ A modern, dark-themed personal blog built with Hugo.
 hugo server
 ```
 
-Visit http://localhost:1313/ to see your blog.
+Visit http://localhost:1313/
 
 ### Create a New Post
 
@@ -31,7 +31,7 @@ This creates a new markdown file in `content/posts/`.
 
 Example:
 
-```markdown
+````markdown
 +++
 date = '2026-01-02T10:00:00-03:00'
 draft = false
@@ -49,7 +49,9 @@ Code blocks support syntax highlighting:
 def hello():
     print("Hello, world!")
 ```
-```
+````
+
+````
 
 ## Build for Production
 
@@ -57,38 +59,12 @@ Generate static files for deployment:
 
 ```bash
 hugo
-```
+````
 
 Files will be created in the `public/` directory.
-
-## Deploy
-
-### Coolify (Recommended)
-
-1. Push your code to a Git repository (GitHub, GitLab, etc.)
-2. In Coolify, create a new resource → Docker-based deployment
-3. Connect your Git repository
-4. Coolify will automatically detect the Dockerfile and build your site
-5. Your blog will be deployed and accessible via your Coolify domain
-
-### Other Options
-
-You can also deploy to:
-- GitHub Pages
-- Netlify
-- Vercel
-- Cloudflare Pages
-
-For these services, run `hugo --minify` and deploy the `public/` directory.
 
 ## Customization
 
 - **Site title & description**: Edit `hugo.toml`
 - **Styling**: Edit `static/css/style.css`
 - **Layouts**: Modify files in `layouts/`
-
-## Tips
-
-- Posts must have `draft = false` to appear on the site
-- Use code fences with language for syntax highlighting (e.g., ` ```python `)
-- Hugo auto-reloads when you save changes during development
